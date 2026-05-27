@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ben 10 Universe</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#050505;
+color:white;
+overflow:hidden;
+}
+
+
+
+.fondo{
+position:fixed;
+width:100%;
+height:100%;
+background:
+repeating-radial-gradient(
+circle,
+rgba(0,255,100,.15) 0px,
+rgba(0,255,100,.15) 2px,
+transparent 3px,
+transparent 40px
+);
+animation:girarFondo 25s linear infinite;
+z-index:-1;
+}
+
+@keyframes girarFondo{
+from{
+transform:rotate(0deg) scale(1.5);
+}
+to{
+transform:rotate(360deg) scale(1.5);
+}
+}
+
+
+.banner{
+height:80px;
+background:#111;
+border-bottom:3px solid #00ff66;
+display:flex;
+align-items:center;
+justify-content:center;
+box-shadow:0 0 20px #00ff66;
+}
+
+.banner h1{
+color:#00ff66;
+text-shadow:0 0 15px #00ff66;
+}
+
+
+
+.container{
+display:flex;
+height:calc(100vh - 80px);
+}
+
+
+
+.sidebar{
+width:250px;
+background:#0b0b0b;
+border-right:2px solid #00ff66;
+padding:20px;
+}
+
+.sidebar h2{
+color:#00ff66;
+margin-bottom:15px;
+}
+
+.sidebar button{
+width:100%;
+padding:12px;
+margin-bottom:10px;
+background:#111;
+border:1px solid #00ff66;
+color:white;
+border-radius:10px;
+cursor:pointer;
+transition:.3s;
+}
+
+.sidebar button:hover{
+background:#00ff66;
+color:black;
+}
+
+.main{
+flex:1;
+padding:40px;
+overflow-y:auto;
+}
+
+.card{
+background:rgba(15,15,15,.95);
+border:2px solid #00ff66;
+border-radius:20px;
+padding:30px;
+box-shadow:0 0 25px #00ff66;
+}
+
+
+
+.omnitrix{
+width:180px;
+height:180px;
+border:12px solid #00ff66;
+border-radius:50%;
+margin:auto;
+margin-bottom:30px;
+animation:girar 4s linear infinite;
+}
+
+@keyframes girar{
+from{
+transform:rotate(0deg);
+}
+to{
+transform:rotate(360deg);
+}
+}
+
+h2{
+color:#00ff66;
+margin-bottom:15px;
+}
+
+p{
+line-height:1.8;
+}
+
+#Layer1 {
+	position:absolute;
+	width:290px;
+	height:260px;
+	z-index:1;
+	left: 345px;
+	top: 400px;
+} 
+#Layer2 {
+	position:absolute;
+	width:209px;
+	height:94px;
+	z-index:1;
+	left: -10px;
+	top: -1px;
+}
+</style>
+</head>
+
+<body>
+
+
+<div class="fondo"></div>
+
+<header class="banner">
+
+<h1>
+ BEN 10 UNIVERSE</h1>
+</header>
+
+<div class="container">
+
+<aside class="sidebar">
+
+<h2>Aliens</h2>
+<a href="pag2.html">
+<button onclick="mostrar('Heatblast')">
+ Heatblast</button></a>
+
+<a href="pag3.html">
+<button onclick="mostrar('xlr8')">
+XLR8</button></a>
+<a href="pag4.html">
+<button onclick="mostrar('diamond')">Diamondhead</button></a>
+<a href="pag5.html">
+<button onclick="mostrar('grey')"> Grey Matter
+</button></a>
+ <a href="pag6.html">
+<button onclick="mostrar('vilgax')"> Vilgax
+</button></a>
+<a href="pag7.html"><button onclick="mostrar('omnitrix')">
+ Omnitrix
+</button></a>
+<a href="pag8.html">
+<button onclick="mostrar('ben10')">
+ Ben 10 clasico 
+</button></a>
+<a href="pag9.html">
+<button onclick="mostrar('ben10')">
+ BEN10 Supremacia Alienigena
+</button><a href="pag9.html">
+<a href="index.html">
+<button onclick="mostrar('ben10')">
+ Inicio
+</button></a>
+<a href="pag11.html">
+<button onclick="mostrar('mapainfinito')">
+ Mapa del infinito
+</button></a>
+<a href="pag12.html">
+<button onclick="mostrar('Mikd'lty')">
+ Mikd'lty
+</button></a>
+<a href="pag13.html">
+<button onclick="mostrar('Mikd'lty')">
+ EL NUCLEO
+</button></a><a href="pag14.html">
+<button onclick="mostrar(magia)">
+ EL LUGAR DE LA MAGIA 
+</button></a>
+<a href="pag15.html">
+<button onclick="mostrar('El perplexahedron')">
+El perplexahedron
+</button></a>
+<a href="pag16.html">
+<button onclick="mostrar('formulario')">
+PREGUNTAS
+</button></a>
+
+</aside>
+<main class="main">
+
+<div class="card" id="contenido">
+
+  <p><center><img src="imagenes/po.gif"></center></p>
+  <h2>BEN 10 Omniverse</h2>
+<p>
+Ben 10 Omniverse es la cuarta serie principal de Ben 10. Continua despues de Ultimate Alien y muestra a Ben con un nuevo Omnitrix mas avanzado creado por Azmuth.
+
+La serie se estreno en 2012 y tiene un estilo mas caricaturesco y colorido, pero tambien incluye historias muy grandes y peligrosas.
+</p>
+<p>Despues de destruir el Ultimatrix, Ben recibe el nuevo Omnitrix oficial. Ahora trabaja como heroe intergalactico luchando contra criminales, invasiones y amenazas universales.</p>
+<br><p>La serie alterna entre dos tiempos diferentes. Por un lado vemos al Ben de 16 anos enfrentando amenazas galacticas junto a su nuevo compa�ero Rook Blonko. Por otro lado aparecen recuerdos del Ben mas peque�o cuando tenia 11 anos y apenas empezaba a crecer como heroe. Gracias a eso Omniverse conecta casi toda la historia de las series anteriores y expande muchisimo el universo de Ben 10.</p>
+<br><p>Rook Blonko se convierte en uno de los personajes mas importantes. Es un alien de la especie Revonnahgander y trabaja como policia espacial. A diferencia de Ben, Rook es muy serio, disciplinado y organizado. Al principio los dos tienen problemas para entenderse porque Ben actua de forma impulsiva mientras Rook sigue reglas todo el tiempo. Poco a poco terminan convirtiendose en mejores amigos y uno de los mejores equipos de la franquicia.</p>
+<p>El nuevo Omnitrix tiene muchisimas mejoras. Ya no falla tanto como el Ultimatrix y puede cambiar de alien mas rapido. Tambien tiene acceso a miles de ADN alienigenas y nuevas funciones ocultas. Ben consigue nuevas transformaciones muy poderosas. Una de las mas importantes es Feedback, un alien electrico capaz de absorber y liberar enormes cantidades de energia. Feedback era el alien favorito de Ben cuando era peque�o, pero dejo de usarlo despues de un evento traumatico relacionado con Malware.</p><br>
+<p>Omniverse tambien agrega muchisimos aliens nuevos. Gravattack puede controlar la gravedad y crear campos gravitacionales enormes. Atomix tiene poder nuclear gigantesco y es considerado uno de los aliens mas fuertes de Ben. Bloxx puede construir estructuras con su cuerpo como si fueran bloques gigantes. Toepick tiene una cara tan horrible que puede paralizar enemigos de miedo. The Worst parece inutil porque es torpe y lento, pero casi no puede recibir da�o.</p>
+<br>
+<p>A pesar del humor y los colores brillantes, Omniverse es probablemente una de las series con mas lore y expansion del universo de Ben 10. Explica secretos del Omnitrix, muestra guerras galacticas, viajes temporales, universos alternos y enemigos capaces de destruir la existencia completa. Tambien muestra a Ben mucho mas maduro, aprendiendo a ser no solo un heroe de la Tierra sino un protector del universo entero.</p>
+<center><img src="imagenes/kokok.gif"></center>
+</body>
+</html>

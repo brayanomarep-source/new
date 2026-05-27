@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ben 10 Universe</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#050505;
+color:white;}
+.sidebar{
+width:250px;
+height:calc(100vh - 80px);
+overflow-y:auto;
+background:#0b0b0b;
+border-right:2px solid #00ff66;
+padding:20px;
+}
+
+.fondo{
+position:fixed;
+width:100%;
+height:100%;
+background:
+repeating-radial-gradient(
+circle,
+rgba(0,255,100,.15) 0px,
+rgba(0,255,100,.15) 2px,
+transparent 3px,
+transparent 40px
+);
+animation:girarFondo 25s linear infinite;
+z-index:-1;
+}
+
+@keyframes girarFondo{
+from{
+transform:rotate(0deg) scale(1.5);
+}
+to{
+transform:rotate(360deg) scale(1.5);
+}
+}
+
+
+
+.banner{
+height:80px;
+background:#111;
+border-bottom:3px solid #00ff66;
+display:flex;
+align-items:center;
+justify-content:center;
+box-shadow:0 0 20px #00ff66;
+}
+
+.banner h1{
+color:#00ff66;
+text-shadow:0 0 15px #00ff66;
+}
+
+
+
+.container{
+display:flex;
+height:calc(100vh - 80px);
+}
+
+
+
+
+.sidebar h2{
+color:#00ff66;
+margin-bottom:15px;
+}
+
+.sidebar button{
+width:100%;
+padding:12px;
+margin-bottom:10px;
+background:#111;
+border:1px solid #00ff66;
+color:white;
+border-radius:10px;
+cursor:pointer;
+transition:.3s;
+}
+
+.sidebar button:hover{
+background:#00ff66;
+color:black;
+}
+
+
+
+.main{
+flex:1;
+padding:40px;
+overflow-y:auto;
+}
+
+.card{
+background:rgba(15,15,15,.95);
+border:2px solid #00ff66;
+border-radius:20px;
+padding:30px;
+box-shadow:0 0 25px #00ff66;
+}
+
+
+
+.omnitrix{
+width:180px;
+height:180px;
+border:12px solid #00ff66;
+border-radius:50%;
+margin:auto;
+margin-bottom:30px;
+animation:girar 4s linear infinite;
+}
+
+@keyframes girar{
+from{
+transform:rotate(0deg);
+}
+to{
+transform:rotate(360deg);
+}
+}
+
+h2{
+color:#00ff66;
+margin-bottom:15px;
+}
+
+p{
+line-height:1.8;
+}
+
+#Layer1 {
+	position:absolute;
+	width:290px;
+	height:260px;
+	z-index:1;
+	left: 345px;
+	top: 400px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="fondo"></div>
+
+<header class="banner">
+<h1> BEN 10 UNIVERSE</h1>
+</header>
+
+<div class="container">
+
+<aside class="sidebar">
+
+<h2>Aliens</h2>
+<a href="pag2.html">
+<button onclick="mostrar('Heatblast')">
+ Heatblast</button></a>
+
+<a href="pag3.html">
+<button onclick="mostrar('xlr8')">
+XLR8</button></a>
+<a href="pag4.html">
+<button onclick="mostrar('diamond')">Diamondhead</button></a>
+<a href="pag5.html">
+<button onclick="mostrar('grey')"> Grey Matter
+</button></a>
+ <a href="Index.html">
+<button onclick="mostrar('vilgax')"> Inicio
+</button></a>
+<a href="pag7.html"><button onclick="mostrar('omnitrix')">
+ Omnitrix
+</button></a>
+<a href="pag8.html">
+<button onclick="mostrar('ben10')">
+ Ben 10 clasico 
+</button></a>
+<a href="pag9.html">
+<button onclick="mostrar('ben10')">
+ BEN10 Supremacia Alienigena
+</button></a>
+<a href="pag10.html">
+<button onclick="mostrar('ben10')">
+ BEN10  Omniverse
+</button></a>
+<a href="pag11.html">
+<button onclick="mostrar('mapainfinito')">
+ Mapa del infinito
+</button></a>
+<a href="pag12.html">
+<button onclick="mostrar('Mikd'lty')">
+ Mikd'lty
+</button></a>
+<a href="pag13.html">
+<button onclick="mostrar('Mikd'lty')">
+ EL NUCLEO
+</button></a>
+<a href="pag14.html">
+<button onclick="mostrar(magia)">
+ EL LUGAR DE LA MAGIA 
+</button></a>
+<a href="pag15.html">
+<button onclick="mostrar('El perplexahedron')">
+El perplexahedron
+</button></a>
+<a href="pag16.html">
+<button onclick="mostrar('formulario')">
+PREGUNTAS
+</button></a>
+
+</aside>
+
+<main class="main">
+
+<div class="card" id="contenido">
+
+  <p><center>
+    <img src="imagenes/vilgax.gif" width="600" height="450">
+  </center></p>
+  <h2>Vilgax</h2>
+<p>
+Vilgax es un chimera sui generis del planeta Vilgaxia. Es el nemesis de Ben y uno de sus oponentes m�s recurrentes y peligrosos. Aparecio por primera vez en el episodio Y fueron 10 y a partir de entonces, en todas las temporadas de la serie original, exceptuando la tercera, as� como en la tercera temporada de Fuerza Alien�gena y en la segunda y tercer temporada de Supremacia Alienigena. Vuelve en Omniverse haciendo una aparicion en la tercera temporada, pero vuelve siendo villano principal en la quinta temporada.
+</p>
+<p>en su primera aparici�n y en Gwen 10 es mas alto ademas de tener mas fuerza y habilidad para pelear, en el episodio Secretos adquiere una version mucho mas grande y musculosa, sus brazos son orga-mecanicos con tubos sobresalientes que le permiten ser mas fuerte incluso su boca esta cubierta por un tipo de respirador y sus piernas tambi�n son orga-mec�nicas con las que puede caminar y tambien adquirir habilidades extraordinarias como fuerza sobrenatural, resistencia y saltar a grandes distancias (ademas se liber� de la baba de Insectoide) esta es su apariencia en los episodios Los malos est�n de regreso, Un d�a perfecto, Ben 10: El Secreto del Omnitrix y De regreso a casa, esta nueva apariencia la adquiere debido que sufrio el accidente en la batalla con Xylene en su primera aparicion hasta cuando es derrotado por Ben, este accidente que sufre es la razon por la que tiene una nueva forma en Ben 10: Fuerza Alienigena</p>
+<img src="imagenes/vbbb.jpg">
+
+</div>
+
+</main>
+
+</div>
+
+
+</body>
+</html>

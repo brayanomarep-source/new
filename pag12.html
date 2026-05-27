@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ben 10 Universe</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#050505;
+color:white;
+}
+.sidebar{
+width:250px;
+height:calc(100vh - 80px);
+overflow-y:auto;
+background:#0b0b0b;
+border-right:2px solid #00ff66;
+padding:20px;
+}
+
+.fondo{
+position:fixed;
+width:100%;
+height:100%;
+background:
+repeating-radial-gradient(
+circle,
+rgba(0,255,100,.15) 0px,
+rgba(0,255,100,.15) 2px,
+transparent 3px,
+transparent 40px
+);
+animation:girarFondo 25s linear infinite;
+z-index:-1;
+}
+
+@keyframes girarFondo{
+from{
+transform:rotate(0deg) scale(1.5);
+}
+to{
+transform:rotate(360deg) scale(1.5);
+}
+}
+
+
+.banner{
+height:80px;
+background:#111;
+border-bottom:3px solid #00ff66;
+display:flex;
+align-items:center;
+justify-content:center;
+box-shadow:0 0 20px #00ff66;
+}
+
+.banner h1{
+color:#00ff66;
+text-shadow:0 0 15px #00ff66;
+}
+
+
+
+.container{
+display:flex;
+height:calc(100vh - 80px);
+}
+
+
+
+
+
+.sidebar h2{
+color:#00ff66;
+margin-bottom:15px;
+}
+
+.sidebar button{
+width:100%;
+padding:12px;
+margin-bottom:10px;
+background:#111;
+border:1px solid #00ff66;
+color:white;
+border-radius:10px;
+cursor:pointer;
+transition:.3s;
+}
+
+.sidebar button:hover{
+background:#00ff66;
+color:black;
+}
+
+
+.main{
+flex:1;
+padding:40px;
+overflow-y:auto;
+}
+
+.card{
+background:rgba(15,15,15,.95);
+border:2px solid #00ff66;
+border-radius:20px;
+padding:30px;
+box-shadow:0 0 25px #00ff66;
+}
+
+
+.omnitrix{
+width:180px;
+height:180px;
+border:12px solid #00ff66;
+border-radius:50%;
+margin:auto;
+margin-bottom:30px;
+animation:girar 4s linear infinite;
+}
+
+@keyframes girar{
+from{
+transform:rotate(0deg);
+}
+to{
+transform:rotate(360deg);
+}
+}
+
+h2{
+color:#00ff66;
+margin-bottom:15px;
+}
+
+p{
+line-height:1.8;
+}
+
+#Layer1 {
+	position:absolute;
+	width:290px;
+	height:260px;
+	z-index:1;
+	left: 345px;
+	top: 400px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="fondo"></div>
+
+<header class="banner">
+<h1> BEN 10 UNIVERSE</h1>
+</header>
+
+<div class="container">
+
+<aside class="sidebar">
+
+<h2>Aliens</h2>
+<a href="pag2.html">
+<button onclick="mostrar('Heatblast')">
+ Heatblast</button></a>
+
+<a href="pag3.html">
+<button onclick="mostrar('xlr8')">
+XLR8</button></a>
+<a href="pag4.html">
+<button onclick="mostrar('diamond')">Diamondhead</button></a>
+<a href="pag5.html">
+<button onclick="mostrar('grey')"> Grey Matter
+</button></a>
+ <a href="pag6.html">
+<button onclick="mostrar('vilgax')"> Vilgax
+</button></a>
+<a href="pag7.html"><button onclick="mostrar('omnitrix')">
+ Omnitrix
+</button></a>
+<a href="pag8.html">
+<button onclick="mostrar('ben10')">
+ Ben 10 clasico 
+</button></a>
+<a href="pag9.html">
+<button onclick="mostrar('ben10')">
+ BEN10 Supremacia Alienigena
+</button><a href="pag9.html">
+<a href="pag10.html">
+<button onclick="mostrar('ben10')">
+ BEN10  Omniverse
+</button></a>
+<a href="pag11.html">
+<button onclick="mostrar('mapainfinito')">
+ Mapa del infinito
+</button></a>
+<a href="index.html">
+<button onclick="mostrar('Mikd'lty')">
+ inicio
+</button></a>
+<a href="pag13.html">
+<button onclick="mostrar('Mikd'lty')">
+ EL NUCLEO
+</button></a>
+<a href="pag14.html">
+<button onclick="mostrar(magia)">
+ EL LUGAR DE LA MAGIA 
+</button></a>
+<a href="pag15.html">
+<button onclick="mostrar('El perplexahedron')">
+El perplexahedron
+</button></a>
+<a href="pag16.html">
+<button onclick="mostrar('formulario')">
+PREGUNTAS
+</button></a>
+</aside>
+
+<main class="main">
+
+<div class="card" id="contenido">
+<h3><center>SELECIONA CUALQUIER PARTE DEL MAPA</center></h3>
+<center>
+<img src="imagenes/mapa.jpg"
+     usemap="#universo"
+     width="800">
+<map name="universo">
+  <area shape="circle"
+      coords="216,152,40"
+      href="pag12.html"
+    >
+  <area shape="circle"
+      coords="258,278,40"
+      href="pag13.html">
+  <area shape="circle"
+      coords="498,130,40"
+      href="pag14.html">
+  <area shape="circle"
+      coords="510,267,46"
+      href="pag15.html">
+</map></center>
+<p></p>
+<p>
+El Mapa del Infinito es un artefacto alienígena. Constituye un mapa completo del espacio-tiempo, abarcando 17 dimensiones. El dueño del mapa es capaz de viajar a cualquier plano dimensional existente. Azmuth lo considera el objeto más importante y peligroso del universo, incluso más que el Omnitrix. Para evitar su mal uso, fue dividido en cuatro partes y escondido en lugares seguros de la galaxia por el Profesor Paradox.</p>
+<h2><center> LA PRIMERA PIEZA DEL MAPA</center> </h2>
+<p>El nombre del planeta es un juego de palabras con el McDonald's McDLT, conocido por venir en dos mitades, una caliente y otra fría. Esto se recalca en la forma de pronunciar el nombre del planeta: "Mc-dil-ty".</p>
+<center><img src="imagenes/mikik.jpg" width="330" height="197">
+</center>
+<p>la primera parte del mapa, que se encontraba en un templo del planeta Mykdl'dy, que es mitad de hielo y fuego. Van custodiados por Necrofriggians, que se dedican a combatir al equipo. Gwen luego hace que algunos de los Necrofriggians concilien el sueño, mientras que Ben como Eco Eco Supremo los golpea con los discos sonicos. El interior del templo está lleno de escollos y trampas, tales como martillos gigantes, ríos de ácido, una criatura con dos cabezas que puede disparar fuego y hielo, y un cuarto lleno de dardos envenenados. Después de la derrota del equipo por todas las trampas, se encuentran con una puerta donde se esconde la primera parte del mapa.</p>
+<p>Ben y Kevin sujetan la puerta, mientras que Gwen entra en la habitación, pero el grupo descubre que Gwen fue golpeada por un dardo venenoso, y se hunde debajo de la puerta. Aggregor luego llega y toma la primera parte del mapa, dejando a Gwen debajo de la puerta. </p>
+
+
+
+</body>
+</html>

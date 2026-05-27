@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ben 10 Universe</title>
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#050505;
+color:white;
+overflow:hidden;
+}
+.sidebar{
+width:250px;
+height:calc(100vh - 80px);
+overflow-y:auto;
+background:#0b0b0b;
+border-right:2px solid #00ff66;
+padding:20px;
+}
+
+
+.fondo{
+position:fixed;
+width:100%;
+height:100%;
+background:
+repeating-radial-gradient(
+circle,
+rgba(0,255,100,.15) 0px,
+rgba(0,255,100,.15) 2px,
+transparent 3px,
+transparent 40px
+);
+animation:girarFondo 25s linear infinite;
+z-index:-1;
+}
+
+@keyframes girarFondo{
+from{
+transform:rotate(0deg) scale(1.5);
+}
+to{
+transform:rotate(360deg) scale(1.5);
+}
+}
+
+
+.banner{
+height:80px;
+background:#111;
+border-bottom:3px solid #00ff66;
+display:flex;
+align-items:center;
+justify-content:center;
+box-shadow:0 0 20px #00ff66;
+}
+
+.banner h1{
+color:#00ff66;
+text-shadow:0 0 15px #00ff66;
+}
+
+
+
+.container{
+display:flex;
+height:calc(100vh - 80px);
+}
+
+
+
+
+
+.sidebar h2{
+color:#00ff66;
+margin-bottom:15px;
+}
+
+.sidebar button{
+width:100%;
+padding:12px;
+margin-bottom:10px;
+background:#111;
+border:1px solid #00ff66;
+color:white;
+border-radius:10px;
+cursor:pointer;
+transition:.3s;
+}
+
+.sidebar button:hover{
+background:#00ff66;
+color:black;
+}
+
+.main{
+flex:1;
+padding:40px;
+overflow-y:auto;
+}
+
+.card{
+background:rgba(15,15,15,.95);
+border:2px solid #00ff66;
+border-radius:20px;
+padding:30px;
+box-shadow:0 0 25px #00ff66;
+}
+
+
+
+.omnitrix{
+width:180px;
+height:180px;
+border:12px solid #00ff66;
+border-radius:50%;
+margin:auto;
+margin-bottom:30px;
+animation:girar 4s linear infinite;
+}
+
+@keyframes girar{
+from{
+transform:rotate(0deg);
+}
+to{
+transform:rotate(360deg);
+}
+}
+
+h2{
+color:#00ff66;
+margin-bottom:15px;
+}
+
+p{
+line-height:1.8;
+}
+
+#Layer1 {
+	position:absolute;
+	width:290px;
+	height:260px;
+	z-index:1;
+	left: 345px;
+	top: 400px;
+} 
+#Layer2 {
+	position:absolute;
+	width:209px;
+	height:94px;
+	z-index:1;
+	left: -10px;
+	top: -1px;
+}
+#Layer3 {
+	position:absolute;
+	width:206px;
+	height:196px;
+	z-index:1;
+	left: 19px;
+	top: 1183px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="fondo"></div>
+
+<header class="banner">
+<h1> BEN 10 UNIVERSE</h1>
+</header>
+
+<div class="container">
+
+<aside class="sidebar">
+
+
+<h2>Aliens</h2>
+<a href="pag2.html">
+<button onclick="mostrar('Heatblast')">
+ Heatblast</button></a>
+
+<a href="pag3.html">
+<button onclick="mostrar('xlr8')">
+XLR8</button></a>
+<a href="pag4.html">
+<button onclick="mostrar('diamond')">Diamondhead</button></a>
+<a href="pag5.html">
+<button onclick="mostrar('grey')"> Grey Matter
+</button></a>
+ <a href="pag6.html">
+<button onclick="mostrar('vilgax')"> Vilgax
+</button></a>
+<a href="pag7.html"><button onclick="mostrar('omnitrix')">
+ Omnitrix
+</button></a>
+<a href="index.html">
+<button onclick="mostrar('ben10')">
+ Inicio
+</button></a>
+<a href="pag9.html">
+<button onclick="mostrar('ben10')">
+ BEN10 Supremacia Alienigena
+</button></a>
+<a href="pag10.html">
+<button onclick="mostrar('ben10')">
+ BEN10  Omniverse
+</button></a>
+<a href="pag11.html">
+<button onclick="mostrar('mapainfinito')">
+ Mapa del infinito
+</button></a>
+<a href="pag12.html">
+<button onclick="mostrar('Mikd'lty')">
+ Mikd'lty
+</button></a>
+<a href="pag13.html">
+<button onclick="mostrar('Mikd'lty')">
+ EL NUCLEO
+</button></a>
+<a href="pag14.html">
+<button onclick="mostrar(magia)">
+ EL LUGAR DE LA MAGIA 
+</button></a>
+<a href="pag15.html">
+<button onclick="mostrar('El perplexahedron')">
+El perplexahedron
+</button></a>
+<a href="pag16.html">
+<button onclick="mostrar('formulario')">
+PREGUNTAS
+</button></a>
+</aside>
+
+<main class="main">
+
+<div class="card" id="contenido">
+
+  <p><center><img src="imagenes/bem.gif"></center></p>
+  <h2>BEN 10</h2>
+<p>
+Ben 10 es una caricatura de accion y ciencia ficcion creada por Man of Action y producida por Cartoon Network. La historia sigue a Ben Tennyson, un nino de 10 anos que encuentra el Omnitrix, un reloj alienigena capaz de transformarlo en distintos extraterrestres con poderes unicos.
+</p>
+<p>Durante unas vacaciones de verano, Ben viaja en una casa rodante llamada Rustbucket junto a su prima Gwen y su abuelo Max. Una noche cae del cielo una capsula alienigena que contiene el Omnitrix. El aparato se pega al brazo de Ben y desde ese momento puede convertirse en aliens para combatir villanos y salvar personas.<p>
+<h3>PERSONAJES</h3>
+<ol>
+<li>Ben Tennyson</li>
+<a href="https://ben10.fandom.com/es/wiki/Gwen_Tennyson">
+<li>Gwen Tennyson</li>
+</a>
+<a href="https://ben10.fandom.com/es/wiki/Max_Tennyson">
+<li>Max Tennyson</li>
+</a>
+<a href="pag6.html">
+<li>Vilgax</li>
+</a>
+<a href="https://ben10-fandom-com.translate.goog/wiki/Kevin_Levin_(Classic)?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=tc">
+<li>Kevin 11</li>
+</a>
+<li>Azmuth</li>
+</ol>
+<p>Como obtuvo el Omnitrix
+
+Una noche Ben vio caer una nave del espacio mientras estaba de campamento. Cuando encontro la capsula, el Omnitrix salto y se pego a su brazo para siempre. Desde ese momento empezo su vida como heroe.</p>
+<P>Alien X es considerado el alien mas fuerte de Ben. Puede controlar el tiempo, la realidad y el espacio. Pero tiene una debilidad: dentro de su mente existen dos personalidades llamadas Serena y Bellicus que discuten antes de tomar decisiones.
+
+Enemigos importantes</P>
+<center><img src="imagenes/bon.gif"></center>
+</body>
+</html>
